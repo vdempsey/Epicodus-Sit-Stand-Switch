@@ -8,6 +8,7 @@ import Contact from './Contact';
 import Error404 from './Error404';
 import Register from './Register';
 import RegisterForm from './RegisterForm';
+import UserProfileControl from './UserProfileControl';
 import UserProfilePage from './UserProfilePage';
 import UserProfileData from './UserProfileData';
 import { Router, Route, hashHistory } from 'react-router';
@@ -17,31 +18,8 @@ import '../stylesheets/index.scss';
 
 
 
-class App extends React.Component {
+function App() {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      userInfo: {
-        name: 'test',
-      }
-    };
-    this.handleNewUserFormSubmission = this.handleNewUserFormSubmission.bind(this);
-  }
-
-  handleNewUserFormSubmission(info) {
-    this.setState(
-      {
-        userInfo: {
-          name: info.name,
-          key: 'value'
-        }
-      });
-
-  }
-
-
-  render() {
     return(
       <div>
         <Router history={hashHistory}>
@@ -50,15 +28,13 @@ class App extends React.Component {
           <Route path='/Why' component={Why} />
           <Route path='/Contact' component={Contact} />
           <Route path='/TestimonialList' component={TestimonialList} />
-          <Route path='/Register' component={() => (
-           <RegisterForm onNewUserCreation={this.handleNewUserFormSubmission}/> )} />
-          <Route path='/UserProfileDisplay' component={() => (
-            <UserProfilePage name={this.state.userInfo.name}/> )} />
+          <Route path='/Register' component={UserProfileControl}/>
+          <Route path='/UserProfileDisplay' component={UserProfilePage} />
           <Route component={Error404} />
         </Router>
       </div>
     );
-  }
+
 }
 
 
