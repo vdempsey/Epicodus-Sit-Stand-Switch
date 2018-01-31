@@ -50,6 +50,7 @@ function RegisterForm(props){
 
   function handleRegisterFormSubmission(event) {
     event.preventDefault();
+    this.props.history.push('/UserProfileDisplay');
     props.onNewUserCreation({name: _name.value, username: _username.value, password: _password.value, motto: _motto.value, id: v4()});
     _url.value = '';
     _name.value = '';
@@ -103,4 +104,4 @@ RegisterForm.propTypes = {
   onNewUserCreation: PropTypes.func
 };
 
-export default RegisterForm;
+export default withRouter(RegisterForm);

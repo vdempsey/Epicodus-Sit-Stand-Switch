@@ -24,14 +24,12 @@ class App extends React.Component {
     this.state = {
       userInfo: {
         name: 'test',
-
       }
     };
     this.handleNewUserFormSubmission = this.handleNewUserFormSubmission.bind(this);
   }
 
   handleNewUserFormSubmission(info) {
-    console.log(this.history);
     this.setState(
       {
         userInfo: {
@@ -53,7 +51,7 @@ class App extends React.Component {
           <Route path='/Contact' component={Contact} />
           <Route path='/TestimonialList' component={TestimonialList} />
           <Route path='/Register' component={() => (
-            <RegisterForm onNewUserCreation={this.handleNewUserFormSubmission}/> )} />
+           <RegisterForm onNewUserCreation={this.handleNewUserFormSubmission}/> )} />
           <Route path='/UserProfileDisplay' component={() => (
             <UserProfilePage name={this.state.userInfo.name}/> )} />
           <Route component={Error404} />

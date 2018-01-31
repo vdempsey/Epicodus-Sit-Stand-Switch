@@ -150,7 +150,6 @@ p {
 .register-form-container {
   display: flex;
   width: 800px;
-  background-color: yellow;
   margin: 20px auto;
 }
 
@@ -176,13 +175,11 @@ button {
 }
 
 .nav-login {
-
   background-color: #D6DE23;
   color: #404040;
-
 }
 
-.nav-register {
+.register {
   background-color: #0090AA;
   color: #fff;
   margin-left: 20px;

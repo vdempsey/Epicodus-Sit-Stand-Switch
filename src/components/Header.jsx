@@ -17,7 +17,7 @@ function Header(){
         <div className="top-right-container">
           <Link to='/'><LogIn /></Link>
           <div>
-            <Link to='/Register'><button className="nav-register">REGISTER</button></Link>
+            <Link to='/Register'><button className="register">REGISTER</button></Link>
           </div>
         </div>
       </div>
