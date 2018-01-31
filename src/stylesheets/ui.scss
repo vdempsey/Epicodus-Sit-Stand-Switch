@@ -1,0 +1,194 @@
+@import "global";
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300,300i,400,400i,600,800');
+
+html,
+body,
+div.app {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border-size: border-box;
+}
+
+h1, label {
+  margin: 0
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.main-container {
+  width: 100%;
+}
+
+.header-container {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  position: fixed;
+  align-content: center;
+  background-color: $dark-grey;
+  border-bottom: 1px solid #fff;
+  a {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+  }
+}
+
+.content-container {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.top-right-container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  background-color: red;
+}
+
+.banner-container {
+  text-align: center;
+  background-color: $dark-grey;
+  color: #fff;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+.splash-content-container {
+  width: 1200px;
+  margin: auto;
+}
+
+.menu-container-wrap {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+}
+
+
+.menu-item-container {
+  display: flex;
+}
+
+.menu-link {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  width: 300px;
+  padding: 7px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #f2f2f2;
+  color: #404040;
+  &.active {
+  color: #fff;
+  background-color: #0090AA;
+  }
+}
+
+.test {
+  width: 100px;
+}
+
+
+.animated-gif {
+  width: 280px;
+}
+
+.main-tagline {
+  font-weight: 300;
+  font-size: 25px;
+}
+
+.logoSm {
+  padding-top: 20px;
+  width: 120px;
+  margin-right: 20px;
+}
+
+.logoType {
+  width: 300px;
+  padding-top: 20px;
+}
+
+.tagline {
+  font-size: 20px;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: -5px;
+}
+
+.banner-two-container {
+  width: 100%;
+  text-align: center;
+  background-color: $dark-grey;
+  height: 220px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-form-container {
+  display: flex;
+  width: 800px;
+  background-color: yellow;
+  margin: 20px auto;
+}
+
+.input-top {
+  margin-right: 10px;
+  width: 160px;
+  border: none;
+  outline: none;
+  height: 37px;
+}
+
+.hide {
+  display: none;
+}
+
+button {
+  font-family: 'Fjalla One';
+  padding: 10px 20px;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  width: 100px;
+}
+
+.nav-login {
+
+  background-color: #D6DE23;
+  color: #404040;
+
+}
+
+.nav-register {
+  background-color: #0090AA;
+  color: #fff;
+  margin-left: 20px;
+}
+
+::-webkit-input-placeholder {
+  color: #b5b5b5;
+  text-align: center;
+}
