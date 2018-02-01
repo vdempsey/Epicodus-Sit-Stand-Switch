@@ -1,3 +1,4 @@
+![alt-tag-here](/img/logotype.png)
 
 # Sit-Stand-Switch
 _Epicodus capstone project (work in progress)_
