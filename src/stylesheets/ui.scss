@@ -66,7 +66,12 @@ p {
 }
 
 .content-container-why {
-  width: 1200px;
+  width: 900px;
+  margin: auto;
+}
+
+.how-container {
+  width: 900px;
   margin: auto;
 }
 
@@ -294,10 +299,34 @@ button {
 
 .why-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding-top: 40px;
   div {
     margin-left: 20px;
+    padding: 0 20px;
     width: 60%;
   }
+}
+
+.content-how {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.how-item {
+  width: 300px;
+}
+
+
+.number {
+  width: 80px;
+  margin: auto;
+  text-align: center;
+
+}
+
+.schedule-img {
+  width: 220px;
 }
