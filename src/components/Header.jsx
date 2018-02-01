@@ -9,7 +9,7 @@ function Header(){
   return (
     <div className="header-container">
       <div className="content-container">
-        <div>
+        <div className="top-nav-menu">
           <Link to='/'>HOME</Link>
           <Link to='/Register'>BLOG</Link>
           <Link to='/Contact'>CONTACT</Link>

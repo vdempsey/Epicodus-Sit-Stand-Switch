@@ -40,6 +40,20 @@ p {
   a {
     color: #fff;
     font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    &.active {
+      color: #fff;
+      background-color: #0090AA;
+    }
+  }
+}
+
+.top-nav-menu {
+  padding-top:15px;
+  a {
+    padding-right: 20px;
   }
 }
 
@@ -55,7 +69,6 @@ p {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  background-color: red;
 }
 
 .banner-container {
@@ -178,6 +191,7 @@ button {
   border: none;
   outline: none;
   width: 100px;
+  background-color: #D6DE23;
 }
 
 .nav-login {
