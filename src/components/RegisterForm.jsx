@@ -50,7 +50,7 @@ function RegisterForm(props){
 
   function handleRegisterFormSubmission(event) {
     event.preventDefault();
-    props.onNewUserCreation({name: _name.value, username: _username.value, password: _password.value, motto: _motto.value, id: v4()});
+    props.onNewUserCreation({url: _url.value, name: _name.value, username: _username.value, password: _password.value, motto: _motto.value, id: v4()});
     _url.value = '';
     _name.value = '';
     _username.value = '';

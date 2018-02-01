@@ -127,6 +127,11 @@ p {
   padding-top: 20px;
 }
 
+.logoType-sm {
+  width: 200px;
+  padding-top: 10px;
+}
+
 .tagline {
   font-size: 20px;
   text-align: left;
@@ -188,4 +193,27 @@ button {
 ::-webkit-input-placeholder {
   color: #b5b5b5;
   text-align: center;
+}
+
+.user-name {
+  color: #fff;
+}
+
+.profile-img-container {
+  position: relative;
+  height: 205px;
+  width: 205px;
+  background-color: red;
+  div {
+    position: absolute;
+    width: 180px;
+    top: 14px;
+    left: 18px;
+  }
+  img {
+    position: absolute;
+    width: 180px;
+    top: 2px;
+    left: 10px;
+  }
 }

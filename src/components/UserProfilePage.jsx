@@ -1,12 +1,14 @@
 import React from 'react';
+import Header from './Header';
+import BannerTwo from './BannerTwo';
+import CircularFrame from '../assets/images/CircularFrame.png';
 import UserProfileData from './UserProfileData';
 
 function UserProfilePage(props) {
   return(
     <div>
-      <p>This is a profile view page</p>
       <UserProfileData
-        name={props.name} />
+        name={props.name} motto={props.motto} />
     </div>
   );
 }
