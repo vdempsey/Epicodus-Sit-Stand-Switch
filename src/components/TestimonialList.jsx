@@ -8,23 +8,23 @@ const masterTestimonialList = [
   {
     image: user1,
     name: 'User 1 name',
-    quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed lacus vel dui vehicula molestie. Proin tincidunt rhoncus condimentum. Phasellus elit magna, imperdiet sit amet lacus ac, porta gravida erat.'
-  },
-  {
-    image: user2,
-    name: 'User 2 name',
-    quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed lacus vel dui vehicula molestie. Proin tincidunt rhoncus condimentum. Phasellus elit magna, imperdiet sit amet lacus ac, porta gravida erat.'
+    quote: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed lacus vel dui vehicula molestie. Proin tincidunt rhoncus condimentum. Phasellus elit magna, imperdiet sit amet lacus ac, porta gravida erat."'
   },
   {
     image: user3,
+    name: 'User 2 name',
+    quote: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed lacus vel dui vehicula molestie. Proin tincidunt rhoncus condimentum. Phasellus elit magna, imperdiet sit amet lacus ac, porta gravida erat."'
+  },
+  {
+    image: user2,
     name: 'User 1 name',
-    quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed lacus vel dui vehicula molestie. Proin tincidunt rhoncus condimentum. Phasellus elit magna, imperdiet sit amet lacus ac, porta gravida erat.'
+    quote: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed lacus vel dui vehicula molestie. Proin tincidunt rhoncus condimentum. Phasellus elit magna, imperdiet sit amet lacus ac, porta gravida erat."'
   }
 ];
 
 function TestimonialList(){
   return (
-    <div>
+    <div className="testimonial-container">
       {masterTestimonialList.map((testimonial, index) =>
         <Testimonial image={testimonial.image}
           quote={testimonial.quote}

@@ -65,6 +65,11 @@ p {
   align-content: center;
 }
 
+.content-container-why {
+  width: 1200px;
+  margin: auto;
+}
+
 .top-right-container {
   display: flex;
   justify-content: space-between;
@@ -262,4 +267,37 @@ button {
   padding-left: 20px;
   padding-top: 80px;
   font-size: 30px;
+}
+
+.testimonial-container {
+  width: 1200px;
+  margin: 30px auto;
+  display: flex;
+}
+
+.testimonial-item {
+  padding: 0 20px;
+  display: flex;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.testimonial-img {
+  width: 120px;
+  margin-right: 20px;
+}
+
+.bio {
+  font-style: italic;
+  font-size: 15px;
+}
+
+.why-content {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+  div {
+    margin-left: 20px;
+    width: 60%;
+  }
 }
