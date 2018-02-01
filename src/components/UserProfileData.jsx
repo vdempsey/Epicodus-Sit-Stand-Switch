@@ -4,6 +4,7 @@ import LogIn from './LogIn';
 import logoType from '../assets/images/logotype.png';
 import frameBlue from '../assets/images/frameBlue.png';
 import newProfile from '../assets/images/newProfile.png';
+import MenuUser from './MenuUser';
 import { Link } from 'react-router';
 
 function UserProfileData(props) {
@@ -33,14 +34,20 @@ function UserProfileData(props) {
           </div>
         </div>
       </div>
-      <div>My name is {props.name}</div>
-      <div>My username is {props.username}</div>
-      <div>My password is {props.password}</div>
-      <div className="profile-img-container">
-        <div style={imgProfile}></div>
-        <img src={frameBlue}/>
+      <div className="user-banner">
+        <div className="user-information">
+          <div>{props.password}</div>
+          <div className="profile-img-container">
+            <div style={imgProfile}></div>
+            <img src={frameBlue}/>
+          </div>
+          <div className="profile-content-container">
+            <div>Hi, {props.username}</div>
+            <div>&quot;{props.motto}&quot;</div>
+          </div>
+        </div>
       </div>
-      <div>My motto is {props.motto}</div>
+      <MenuUser />
     </div>
   );
 }
