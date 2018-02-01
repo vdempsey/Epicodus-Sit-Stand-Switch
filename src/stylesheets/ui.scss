@@ -320,10 +320,28 @@ button {
 }
 
 
+.show:hover .hide {
+  display: block;
+}
+
+.show:hover .number {
+  display: none;
+}
+
+.show:hover h3 {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+
 .number {
-  width: 80px;
+  width: 130px;
   margin: auto;
   text-align: center;
+  margin-top: 30px;
 
 }
 

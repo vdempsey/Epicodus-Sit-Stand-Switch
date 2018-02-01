@@ -19,21 +19,37 @@ function How(){
       <Menu />
       <div className="how-container">
         <div className="content-how">
+
           <div className="how-item">
-            <img className="number" src={one} />
-            <h3>Create your schedule</h3>
-            <img src={schedule} className="schedule-img"/>
+            <div className="show">
+              <img className="number" src={one} />
+              <h3>Create your schedule</h3>
+              <div className="hide">
+                <img src={schedule} className="schedule-img"/>
+              </div>
+            </div>
           </div>
+
           <div className="how-item">
-            <img className="number" src={two} />
-            <h3>Team up with your friends</h3>
-            <img src={friends} className="schedule-img"/>
+            <div className="show">
+              <img className="number" src={two} />
+              <h3>Team up with friends</h3>
+              <div className="hide">
+                <img src={friends} className="schedule-img"/>
+              </div>
+            </div>
           </div>
+
           <div className="how-item">
-            <img className="number" src={three} />
-            <h3>Sit Stand Switch</h3>
-            <img src={sitStandsm} className="schedule-img"/>
+            <div className="show">
+              <img className="number" src={three} />
+              <h3>Move throughout your day</h3>
+              <div className="hide">
+                <img src={sitStandsm} className="schedule-img"/>
+              </div>
+            </div>
           </div>
+
         </div>
       </div>
     </div>
