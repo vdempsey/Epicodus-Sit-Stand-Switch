@@ -1,5 +1,5 @@
 import React from 'react';
-import logoSm from '../assets/images/sit-stand-icon.png';
+import figures from '../assets/images/figures.png';
 import logoType from '../assets/images/logotype.png';
 
 function BannerTwo(props){
@@ -7,7 +7,7 @@ function BannerTwo(props){
     <div>
       <div className="banner-two-container">
         <div>
-          <img className="logoSm" src={logoSm} />
+          <img className="logoSm" src={figures} />
         </div>
         <div>
           <img className="logoType" src={logoType} />

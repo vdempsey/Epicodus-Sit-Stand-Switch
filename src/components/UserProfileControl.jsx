@@ -19,6 +19,7 @@ class UserProfileControl extends React.Component {
   this.state = {
       userInfo: {
         name: 'Mia',
+        username: 'MamaMia',
         motto: 'I like to move it move it'
       },
     formVisibleOnPage: false
@@ -31,6 +32,7 @@ class UserProfileControl extends React.Component {
       userInfo: {
         name: info.name,
         motto: info.motto,
+        username: info.username,
         key: 'value'
       }});
   }
@@ -38,7 +40,7 @@ class UserProfileControl extends React.Component {
   render() {
     let currentlyVisibleContent = null;
     if (this.state.formVisibleOnPage){
-      currentlyVisibleContent = <UserProfilePage name={this.state.userInfo.name} motto={this.state.userInfo.motto}/>;
+      currentlyVisibleContent = <UserProfilePage name={this.state.userInfo.name} motto={this.state.userInfo.motto} username={this.state.userInfo.username}/>;
     } else {
       currentlyVisibleContent = <RegisterForm onNewUserCreation={this.handleNewUserFormSubmission}/>;
     }

@@ -10,9 +10,9 @@ function Menu(){
   return (
     <div className="menu-user-container-wrap">
       <div className="menu-container">
-        <MenuLink to='/Why' className="menu-link">WHY</MenuLink>
-        <MenuLink to='/How' className="menu-link">HOW</MenuLink>
-        <MenuLink to='/Register' className="menu-link">REGISTER</MenuLink>
+        <MenuLink to='/Why' className="menu-link">MY DASHBOARD</MenuLink>
+        <MenuLink to='/How' className="menu-link">MY SCHEDULE</MenuLink>
+        <MenuLink to='/Register' className="menu-link">MY PEOPLE</MenuLink>
       </div>
     </div>
   );

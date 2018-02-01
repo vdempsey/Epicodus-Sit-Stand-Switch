@@ -1,5 +1,5 @@
 import React from 'react';
-import add from '../assets/images/add.png';
+import plus from '../assets/images/plus.png';
 import PropTypes from 'prop-types';
 import Header from './Header';
 import Menu from './Menu';
@@ -11,35 +11,33 @@ import { withRouter } from 'react-router'
 function RegisterForm(props){
   const registerFormStyle = {
     width: '400px',
-    margin: '20px auto',
+    margin: '0px auto',
     textAlign: 'center',
     boxSizing: 'boarder-box'
   };
   const inputFields = {
-    height: '30px',
-    marginRight: '10px',
-    width: '200px',
+    height: '40px',
+    marginBottom: '15px',
+    width: '300px',
     border: '1px solid #b5b5b5',
-  };
-  const labelStyle = {
-    fontFamily: '"Open Sans", sans-serif',
-    fontWeight: '300',
-    textAlign: 'right',
-    width: '120px',
-    padding: '10px',
-    marginBottom: '5px',
-    display: 'inline-block'
+    textAlign: 'center',
+    fontSize: '16px',
+    color: '#404040'
   };
   const textAreaStyle = {
     width: '160px',
     padding: '0'
   };
   const register = {
-    width: '204px',
+    width: '300px',
     backgroundColor: "#0090AA",
     color: "#fff",
-    marginLeft: '130px',
-    marginTop: '10px'
+    height: '50px',
+    fontSize: '20px'
+  };
+  const plusStyle = {
+    width: '80px',
+    marginBottom: '10px'
   }
 
   let _url = null;
@@ -50,8 +48,7 @@ function RegisterForm(props){
 
   function handleRegisterFormSubmission(event) {
     event.preventDefault();
-    props.onNewUserCreation({url: _url.value, name: _name.value, username: _username.value, password: _password.value, motto: _motto.value, id: v4()});
-    _url.value = '';
+    props.onNewUserCreation({name: _name.value, username: _username.value, password: _password.value, motto: _motto.value, id: v4()});
     _name.value = '';
     _username.value = '';
     _password.value = '';
@@ -65,32 +62,23 @@ function RegisterForm(props){
     <BannerTwo bannerText='Activate your 8 to 5' />
     <Menu />
     <div className="register-form-container">
-      <div>
-        <img className="logoSm" src={add} />
-        <p>For best results, upload a square photo</p>
-      </div>
       <form onSubmit={handleRegisterFormSubmission} style={registerFormStyle}>
         <div>
-          <label htmlFor="url" style={labelStyle}>Profile Pic</label>
-          <input style={inputFields} id='url' type="text" ref={input => _url = input}/>
+          <img style={plusStyle} src={plus} />
         </div>
         <div>
-          <label htmlFor="name" style={labelStyle}>Name</label>
-          <input style={inputFields} id='name' ref={input => _name = input}/>
+          <input style={inputFields} id='name' placeholder='Name' ref={input => _name = input}/>
         </div>
         <div>
-          <label htmlFor="username" style={labelStyle}>User Name</label>
-          <input style={inputFields} id='username'ref={input => _username = input}/>
+          <input style={inputFields} id='username' placeholder='Username' ref={input => _username = input}/>
         </div>
         <div>
-          <label htmlFor="password" style={labelStyle}>Password</label>
-          <input style={inputFields} id='name' ref={input => _password = input}/>
+          <input style={inputFields} id='name' placeholder='Password' ref={input => _password = input}/>
         </div>
         <div>
-          <label htmlFor="motto" style={labelStyle}>Your Motto</label>
-          <input style={inputFields} id='name' ref={input => _motto = input}/>
+          <input style={inputFields} id='name' placeholder='Your Motto' ref={input => _motto = input}/>
         </div>
-        <button type='submit' style={register}>REGISTER</button>
+        <button type='submit' style={register}>SAVE</button>
       </form>
     </div>
   </div>

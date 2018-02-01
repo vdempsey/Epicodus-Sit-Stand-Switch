@@ -25,11 +25,11 @@ function UserProfileData(props) {
       <div className="header-container">
         <div className="content-container">
           <div>
-          <img className="logoType-sm" src={logoType} />
+          <Link to="/"><img className="logoType-sm" src={logoType} /></Link>
           </div>
           <div>
             <div>
-              <p className='user-name'>Welcome {props.name}</p>
+              <p className='user-name'>Welcome <span className="name">{props.name}</span></p>
             </div>
           </div>
         </div>
@@ -42,8 +42,8 @@ function UserProfileData(props) {
             <img src={frameBlue}/>
           </div>
           <div className="profile-content-container">
-            <div>Hi, {props.username}</div>
             <div>&quot;{props.motto}&quot;</div>
+            <div>&#8208; {props.username}</div>
           </div>
         </div>
       </div>

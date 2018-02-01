@@ -12,7 +12,7 @@ function Header(){
         <div className="top-nav-menu">
           <Link to='/'>HOME</Link>
           <Link to='/Register'>BLOG</Link>
-          <Link to='/Contact'>CONTACT</Link>
+          <Link to='/Register'>CONTACT</Link>
         </div>
         <div className="top-right-container">
           <Link to='/'><LogIn /></Link>
