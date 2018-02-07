@@ -10,13 +10,12 @@ import { Link } from 'react-router';
 function UserProfileData(props) {
   const imgProfile = {
     color: 'blue',
-    backgroundImage: 'url(' + newProfile + ')',
+    backgroundImage:  `url(${props.url})`,
     backgroundSize: 'cover',
     height: '170px',
     width: '170px',
-    backgroungColor: 'yellow',
     borderRadius: '50%',
-    border: '1px solid red'
+    border: '1px solid white'
 
   };
 

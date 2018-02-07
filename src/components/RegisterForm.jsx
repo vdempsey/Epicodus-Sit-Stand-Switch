@@ -48,11 +48,12 @@ function RegisterForm(props){
 
   function handleRegisterFormSubmission(event) {
     event.preventDefault();
-    props.onNewUserCreation({name: _name.value, username: _username.value, password: _password.value, motto: _motto.value, id: v4()});
+    props.onNewUserCreation({name: _name.value, username: _username.value, password: _password.value, motto: _motto.value, url: _url.value, id: v4()});
     _name.value = '';
     _username.value = '';
     _password.value = '';
     _motto.value = '';
+    _url.value = '';
   }
 
 
@@ -65,6 +66,9 @@ function RegisterForm(props){
       <form onSubmit={handleRegisterFormSubmission} style={registerFormStyle}>
         <div>
           <img style={plusStyle} src={plus} />
+        </div>
+        <div>
+          <input style={inputFields} id='url' placeholder='url' ref={input => _url = input}/>
         </div>
         <div>
           <input style={inputFields} id='name' placeholder='Name' ref={input => _name = input}/>

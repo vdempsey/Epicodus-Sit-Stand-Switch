@@ -8,7 +8,8 @@ function UserProfilePage(props) {
   return(
     <div>
       <UserProfileData
-        name={props.name} motto={props.motto} username={props.username} />
+        name={props.name} motto={props.motto} username={props.username}
+        url={props.url} />
     </div>
   );
 }
