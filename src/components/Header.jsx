@@ -1,8 +1,11 @@
 import React from 'react';
 import LogIn from './LogIn';
+import ExistingUser from './ExistingUser';
+import LogInControl from './LogInControl';
 import Register from './Register';
 import Error404 from './Error404';
 import { Link } from 'react-router';
+import UserProfileData from './UserProfileData';
 
 
 function Header(){
@@ -15,7 +18,9 @@ function Header(){
           <Link to='/Contact'>CONTACT</Link>
         </div>
         <div className="top-right-container">
-          <Link to='/'><LogIn /></Link>
+          <div>
+            <Link to='/LogIn'><button className="register">LOGIN</button></Link>
+          </div>
           <div>
             <Link to='/Register'><button className="register">REGISTER</button></Link>
           </div>

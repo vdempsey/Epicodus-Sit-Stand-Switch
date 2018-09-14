@@ -1,15 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import LogIn from './LogIn';
 import logoType from '../assets/images/logotype.png';
 import frameBlue from '../assets/images/frameBlue.png';
-import newProfile from '../assets/images/newProfile.png';
+import existingUser from '../assets/images/existingUser.jpg';
 import MenuUser from './MenuUser';
 import { Link } from 'react-router';
 
-function UserProfileData(props) {
+function ExistingUser(props) {
+
   const imgProfile = {
     color: 'blue',
-    backgroundImage:  `url(${props.url})`,
+    backgroundImage: `url(${existingUser})`,
     backgroundSize: 'cover',
     height: '170px',
     width: '170px',
@@ -39,7 +41,7 @@ function UserProfileData(props) {
             <img src={frameBlue}/>
           </div>
           <div className="profile-content-container">
-            <div>&quot;{props.motto}&quot;</div>
+            <div>&quot;Mia's motto&quot;</div>
             <div>&#8208; {props.username}</div>
           </div>
         </div>
@@ -49,12 +51,9 @@ function UserProfileData(props) {
   );
 }
 
-UserProfileData.propTypes = {
-  url: PropTypes.string,
+ExistingUser.propTypes = {
   name: PropTypes.string,
-  username: PropTypes.string,
-  password: PropTypes.string,
-  motto: PropTypes.string
+  username: PropTypes.string
 };
 
-export default UserProfileData;
+export default ExistingUser;

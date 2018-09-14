@@ -13,7 +13,7 @@ function Register(props){
       <Header/>
       <BannerTwo bannerText='Activate your 8 to 5' />
       <Menu />
-      <RegisterForm onNewUserCreation={props.handleNewUserFormSubmissionn}/>
+      <RegisterForm onNewUserCreation={props.handleNewUserFormSubmission}/>
     </div>
   );
 }

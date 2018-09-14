@@ -77,10 +77,10 @@ function RegisterForm(props){
           <input style={inputFields} id='username' placeholder='Username' ref={input => _username = input}/>
         </div>
         <div>
-          <input style={inputFields} id='name' placeholder='Password' ref={input => _password = input}/>
+          <input style={inputFields} id='password' placeholder='Password' ref={input => _password = input}/>
         </div>
         <div>
-          <input style={inputFields} id='name' placeholder='Your Motto' ref={input => _motto = input}/>
+          <input style={inputFields} id='motto' placeholder='Your Motto' ref={input => _motto = input}/>
         </div>
         <button type='submit' style={register}>SAVE</button>
       </form>
