@@ -10,7 +10,7 @@ import Menu from './Menu';
 import BannerTwo from './BannerTwo';
 import { Link } from 'react-router';
 
-function PleaseRegister(props){
+function LogInError(props){
   return (
     <div>
     <Header/>
@@ -27,4 +27,4 @@ function PleaseRegister(props){
 }
 
 
-export default PleaseRegister;
+export default LogInError;

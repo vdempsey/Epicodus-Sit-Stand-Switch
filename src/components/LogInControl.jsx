@@ -6,8 +6,7 @@ import BannerTwo from './BannerTwo';
 import { Link } from 'react-router';
 import { v4 } from 'uuid';
 import UserProfilePage from './UserProfilePage';
-import PleaseRegister from './PleaseRegister';
-//import RegisterForm from './RegisterForm';
+import LogInError from './LogInError';
 import LogIn from './LogIn';
 import LogInForm from './LogInForm';
 import ExistingUser from './ExistingUser';
@@ -49,7 +48,7 @@ class LogInControl extends React.Component {
     }
 
     else {
-      currentlyVisibleContent = <PleaseRegister />;
+      currentlyVisibleContent = <LogInError />;
     }
     return (
       <div>
