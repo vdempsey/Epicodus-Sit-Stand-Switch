@@ -1,29 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { browserHistory } from 'react-router';
 import LogIn from './LogIn';
-import logoType from '../assets/images/logotype.png';
-import frameBlue from '../assets/images/frameBlue.png';
-import existingUser from '../assets/images/existingUser.jpg';
+import LogInForm from './LogInForm';
+
+
 import plus from '../assets/images/plus.png';
 import Header from './Header';
 import Menu from './Menu';
 import BannerTwo from './BannerTwo';
 import { Link } from 'react-router';
 
-function LogInError(props){
+
+function LogInError(){
   return (
     <div>
-    <Header/>
-    <BannerTwo bannerText='Activate your 8 to 5' />
-    <Menu />
-    <div className="register-form-container">
-      <div>
-        <img src={plus} />
+      <Header/>
+      <BannerTwo bannerText='Activate your 8 to 5' />
+      <Menu />
+      <div className="register-form-container">
+        <h3>Sorry, we didn't find you! Please <Link to='/LogIn'>try again</Link> or <Link to='/Register'>register here</Link></h3>
       </div>
-      <h1>Sorry, we didn't find you! Please try again!</h1>
     </div>
-  </div>
-  );
+    );
 }
 
 

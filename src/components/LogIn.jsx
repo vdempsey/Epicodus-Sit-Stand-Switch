@@ -1,6 +1,5 @@
 import React from 'react';
 import BannerTwo from './BannerTwo';
-import RegisterForm from './RegisterForm';
 import Header from './Header';
 import Menu from './Menu';
 import LogInForm from './LogInForm';

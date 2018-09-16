@@ -5,8 +5,8 @@ import Why from './Why';
 import Contact from './Contact';
 import Error404 from './Error404';
 import UserProfileControl from './UserProfileControl';
-import ExistingUser from './ExistingUser';
 import LogInControl from './LogInControl';
+import LogInForm from './LogInForm';
 import { Router, Route, hashHistory } from 'react-router';
 import '../stylesheets/ui.scss';
 import '../stylesheets/index.scss';
@@ -24,8 +24,9 @@ function App() {
           <Route path='/Contact' component={Contact} />
           <Route path='/Register' component={UserProfileControl}/>
           <Route path='/UserProfileDisplay' component={UserProfileControl} />
-          <Route path='/ExistingUser' component={ExistingUser} />
           <Route path='/LogIn' component={LogInControl} />
+          <Route path='/LogInForm' component={LogInForm} />
+          <Route path='/LogInAgain' component={LogInControl} />
           <Route component={Error404} />
         </Router>
       </div>

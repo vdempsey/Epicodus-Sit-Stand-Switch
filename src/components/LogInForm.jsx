@@ -1,7 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import LogInControl from './LogIn';
-import ExistingUser from './ExistingUser';
 import Header from './Header';
 import Menu from './Menu';
 import BannerTwo from './BannerTwo';
@@ -22,18 +20,17 @@ import { v4 } from 'uuid';
 
   return (
     <div>
-    <Header/>
-    <BannerTwo bannerText='Activate your 8 to 5' />
-    <Menu />
-    <div className="register-form-container">
-    <form onSubmit={handleLogInFormSubmission}>
-      <input className='input-top' id='username' placeholder='Username' ref={input => _username = input}/>
-      <input className='input-top' id='password' placeholder='Password' ref={input => _password = input}/>
-      <button type='submit'>LOGIN</button>
-    </form>
-  </div>
-</div>
-
+      <Header/>
+      <BannerTwo bannerText='Activate your 8 to 5' />
+      <Menu />
+      <div className="register-form-container">
+        <form onSubmit={handleLogInFormSubmission}>
+          <input className='input-top' id='username' placeholder='Username' ref={input => _username = input}/>
+          <input className='input-top' id='password' placeholder='Password' ref={input => _password = input}/>
+          <button type='submit'>LOGIN</button>
+        </form>
+      </div>
+    </div>
   );
 }
 

@@ -1,16 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Header from './Header';
-import Menu from './Menu';
-import BannerTwo from './BannerTwo';
-import { Link } from 'react-router';
-import { v4 } from 'uuid';
 import UserProfilePage from './UserProfilePage';
 import LogInError from './LogInError';
 import LogIn from './LogIn';
 import LogInForm from './LogInForm';
-import ExistingUser from './ExistingUser';
-import Register from './Register';
+import existingUser from '../assets/images/existingUser.jpg';
 import { withRouter } from 'react-router';
 
 
@@ -28,7 +22,9 @@ class LogInControl extends React.Component {
   };
 
   this.handleLogInFormSubmission = this.handleLogInFormSubmission.bind(this);
+
 }
+
 
   handleLogInFormSubmission(info) {
     this.setState({formVisibleOnPage: true,
@@ -39,16 +35,19 @@ class LogInControl extends React.Component {
       }});
   }
 
+
   render() {
     let currentlyVisibleContent = null;
-    if (this.state.userLog.username == 'Mia'){
-      currentlyVisibleContent = <ExistingUser name='Mia' />;
+    if (this.state.userLog.username == 'Mia' && this.state.userLog.password == 'Mia'){
+      currentlyVisibleContent = <UserProfilePage name='Mia' motto='I like to move it move it!' username="MM" url={existingUser} />;
     } else if(!this.state.formVisibleOnPage) {
-      currentlyVisibleContent = <LogInForm onUserLogIn={this.handleLogInFormSubmission}/>;;
+      currentlyVisibleContent = <LogInForm onUserLogIn={this.handleLogInFormSubmission}/>;
     }
-
     else {
       currentlyVisibleContent = <LogInError />;
+      if(currentlyVisibleContent) {
+        this.state.formVisibleOnPage = false;
+      }
     }
     return (
       <div>
@@ -58,8 +57,9 @@ class LogInControl extends React.Component {
   }
 }
 
-LogIn.propTypes = {
-  onUserLogIn: PropTypes.func
+LogInControl.propTypes = {
+  onUserLogIn: PropTypes.func,
+  onClick: PropTypes.func
 };
 
 export default LogInControl;
