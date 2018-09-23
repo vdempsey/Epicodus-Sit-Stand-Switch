@@ -1,6 +1,4 @@
 import React from 'react';
-import LogIn from './LogIn';
-import Register from './Register';
 import How from './How';
 import Why from './Why';
 import { Link } from 'react-router';

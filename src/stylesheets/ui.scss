@@ -176,10 +176,13 @@ p {
   align-items: center;
 }
 
-.register-form-container {
+.register-form-container, .log-in-form-container {
   display: flex;
-  width: 800px;
-  margin: 20px auto;
+//  width: 800px;
+  margin: 0px auto;
+  background-color: $dark-grey;
+  align-items: center;
+  height: 100vh;
 }
 
 .input-top {

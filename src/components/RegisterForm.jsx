@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Header from './Header';
 import Menu from './Menu';
 import BannerTwo from './BannerTwo';
+import logoType from '../assets/images/logotype.png';
 import { Link } from 'react-router';
 import { v4 } from 'uuid';
 import { withRouter } from 'react-router'
@@ -13,7 +14,7 @@ function RegisterForm(props){
     width: '400px',
     margin: '0px auto',
     textAlign: 'center',
-    boxSizing: 'boarder-box'
+    boxSizing: 'boarder-box',
   };
   const inputFields = {
     height: '40px',
@@ -59,9 +60,18 @@ function RegisterForm(props){
 
   return (
     <div>
-    <Header/>
-    <BannerTwo bannerText='Activate your 8 to 5' />
-    <Menu />
+      <div className="header-container">
+        <div className="content-container">
+          <div>
+          <Link to="/"><img className="logoType-sm" src={logoType} /></Link>
+          </div>
+          <div>
+            <div>
+              <p className='user-name'>Greetings <span className="name">Sit-Stand Worrier!</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
     <div className="register-form-container">
       <form onSubmit={handleRegisterFormSubmission} style={registerFormStyle}>
         <div>

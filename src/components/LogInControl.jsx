@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import UserProfilePage from './UserProfilePage';
 import LogInError from './LogInError';
-import LogIn from './LogIn';
 import LogInForm from './LogInForm';
 import existingUser from '../assets/images/existingUser.jpg';
 import { withRouter } from 'react-router';
