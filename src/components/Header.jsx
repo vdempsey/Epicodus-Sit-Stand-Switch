@@ -14,7 +14,7 @@ function Header(){
         </div>
         <div className="top-right-container">
           <div>
-            <Link to='/LogIn'><button className="register">LOGIN</button></Link>
+            <Link to='/LogIn'><button className="login">LOGIN</button></Link>
           </div>
           <div>
             <Link to='/Register'><button className="register">REGISTER</button></Link>

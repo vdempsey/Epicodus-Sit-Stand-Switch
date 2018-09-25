@@ -1,21 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import logoType from '../assets/images/logotype.png';
+import existingUser from '../assets/images/existingUser.jpg';
 import frameBlue from '../assets/images/frameBlue.png';
 import newProfile from '../assets/images/newProfile.png';
+import user1 from '../assets/images/user1.png';
 import MenuUser from './MenuUser';
 import { Link } from 'react-router';
 
 function UserProfileData(props) {
+
   const imgProfile = {
-    color: 'blue',
-    backgroundImage:  `url(${props.url})`,
-    backgroundSize: 'cover',
     height: '170px',
     width: '170px',
     borderRadius: '50%',
-    border: '1px solid white'
+    marginTop: '15',
+    marginLeft: '3'
 
+  };
+  const signOut = {
+    fontFamily: 'Fjalla One',
+    paddingLeft: '40px',
+    color: '#d6de23'
   };
 
   return (
@@ -27,7 +33,7 @@ function UserProfileData(props) {
           </div>
           <div>
             <div>
-              <p className='user-name'>Welcome <span className="name">{props.name}</span></p>
+              <p className='user-name'>Welcome <span className="name">{props.name}</span>. <Link to='/LogIn' style={signOut}>SIGN OUT</Link></p>
             </div>
           </div>
         </div>
@@ -35,7 +41,7 @@ function UserProfileData(props) {
       <div className="user-banner">
         <div className="user-information">
           <div className="profile-img-container">
-            <div style={imgProfile}></div>
+            <img src={require(`../assets/images/${props.url}`)} style={imgProfile}/>
             <img src={frameBlue}/>
           </div>
           <div className="profile-content-container">

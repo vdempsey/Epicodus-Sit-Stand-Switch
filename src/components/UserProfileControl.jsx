@@ -1,5 +1,4 @@
 import React from 'react';
-import add from '../assets/images/add.png';
 import PropTypes from 'prop-types';
 import Header from './Header';
 import Menu from './Menu';
@@ -7,6 +6,7 @@ import BannerTwo from './BannerTwo';
 import { Link } from 'react-router';
 import { v4 } from 'uuid';
 import UserProfilePage from './UserProfilePage';
+import existingUser from '../assets/images/existingUser.jpg';
 import RegisterForm from './RegisterForm';
 import { withRouter } from 'react-router'
 
@@ -18,7 +18,7 @@ class UserProfileControl extends React.Component {
   super(props);
   this.state = {
       userInfo: {
-        url: 'www',
+        url: 'mikey.jpgs',
         name: 'Mia',
         username: 'MamaMia',
         motto: 'I like to move it move it'
@@ -38,6 +38,13 @@ class UserProfileControl extends React.Component {
         key: 'value'
       }});
   }
+
+
+
+
+
+
+
 
   render() {
     let currentlyVisibleContent = null;

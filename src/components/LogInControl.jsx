@@ -17,7 +17,7 @@ class LogInControl extends React.Component {
         username: '',
         password: '',
       },
-      formVisibleOnPage: false
+      formVisibleOnPage: false,
   };
 
   this.handleLogInFormSubmission = this.handleLogInFormSubmission.bind(this);
@@ -37,16 +37,16 @@ class LogInControl extends React.Component {
 
   render() {
     let currentlyVisibleContent = null;
-    if (this.state.userLog.username == 'Mia' && this.state.userLog.password == 'Mia'){
-      currentlyVisibleContent = <UserProfilePage name='Mia' motto='I like to move it move it!' username="MM" url={existingUser} />;
-    } else if(!this.state.formVisibleOnPage) {
+    if (!this.state.formVisibleOnPage) {
       currentlyVisibleContent = <LogInForm onUserLogIn={this.handleLogInFormSubmission}/>;
-    }
+
+    } else if (this.state.userLog.username == 'Mia' && this.state.userLog.password == 'Mia'){
+      currentlyVisibleContent = <UserProfilePage name='Mia' motto='I like to move it move it!' username="MM" url='mikey.jpg' />;
+      this.state.formVisibleOnPage = false;
+      }
     else {
       currentlyVisibleContent = <LogInError />;
-      if(currentlyVisibleContent) {
-        this.state.formVisibleOnPage = false;
-      }
+      this.state.formVisibleOnPage = false;
     }
     return (
       <div>

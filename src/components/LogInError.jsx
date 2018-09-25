@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { browserHistory } from 'react-router';
 import LogInForm from './LogInForm';
+import LogInControl from './LogInControl';
 import logoType from '../assets/images/logotype.png';
 import plus from '../assets/images/plus.png';
 import Header from './Header';
