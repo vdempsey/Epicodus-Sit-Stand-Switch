@@ -40,7 +40,7 @@ function UserProfileData(props) {
           </div>
           <div>
             <div>
-              <p className='user-name'>Welcome <span className="name">{props.name}</span>. <Link to='/LogIn' style={signOut}>SIGN OUT</Link></p>
+              <p className='user-name'>Welcome <span className="name">{props.name}</span>! <Link to='/LogIn' style={signOut}>SIGN OUT</Link></p>
             </div>
           </div>
         </div>

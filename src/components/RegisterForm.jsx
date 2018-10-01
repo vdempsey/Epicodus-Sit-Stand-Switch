@@ -82,7 +82,7 @@ function RegisterForm(props){
           <img style={plusStyle} src={plus} />
         </div>
         <div>
-          <input style={inputFields} id='url' placeholder='url' ref={input => _url = input}/>
+          <input style={inputFields} id='url' placeholder='Add Your Profile Photo' ref={input => _url = input}/>
         </div>
         <div>
           <input style={inputFields} id='name' placeholder='Name' ref={input => _name = input}/>
