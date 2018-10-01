@@ -32,7 +32,7 @@ function LogInError(){
           </div>
           <div>
             <div>
-              <p className='user-name'>You can do it <span className="name">Sit-Stand Worrier!</span></p>
+              <p className='user-name'>You can do it <span className="name">Sit-Stand Warrior!</span></p>
             </div>
           </div>
         </div>

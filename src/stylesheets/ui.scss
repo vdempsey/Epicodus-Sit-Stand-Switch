@@ -66,8 +66,11 @@ p {
 }
 
 .content-container-why {
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
   margin: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .how-container {
@@ -169,7 +172,7 @@ p {
   width: 100%;
   text-align: center;
   background-color: $dark-grey;
-  height: 220px;
+  height: 300px;
   padding-top: 50px;
   display: flex;
   justify-content: center;
@@ -258,7 +261,11 @@ button {
 
 .user-banner {
   width: 100%;
+  height: 300px;
+  padding-top: 50px;
   background-color: $dark-grey;
+  display: flex;
+  justify-content: center;
 }
 
 .user-information {
@@ -266,8 +273,6 @@ button {
   justify-content: center;
   font-size: 18px;
   font-family: 'Open-Sans', sans-serif;
-  padding-top: 100px;
-  padding-bottom: 20px;
   background-color: #404040;
   color: white;
   margin: auto;
@@ -275,28 +280,47 @@ button {
 }
 
 .profile-content-container {
-  width: 300px;
+  width: 320px;
   padding-left: 20px;
   padding-top: 80px;
-  font-size: 30px;
+  font-size: 28px;
+}
+
+.user-signature {
+  font-size: 25px;
+  font-style: italic;
+  padding-top: 10px;
 }
 
 .testimonial-container {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   margin: 30px auto;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
 
 .testimonial-item {
   padding: 0 20px;
-  display: flex;
   font-size: 15px;
   line-height: 24px;
+  width: 30%;
+  min-width: 300px;
 }
 
 .testimonial-img {
-  width: 120px;
+  width: 80px;
+  height: 90px;
   margin-right: 20px;
+}
+
+.snapshot {
+  display: flex;
+  justify-content: center;
+  // margin: 0 auto;
 }
 
 .bio {
@@ -306,6 +330,7 @@ button {
 
 .why-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   padding-top: 40px;
   div {
@@ -315,11 +340,20 @@ button {
   }
 }
 
+.how-container {
+  width: 100%;
+}
+
+
 .content-how {
+  width: 100%;
+  max-width: 1200px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   text-align: center;
   padding-top: 30px;
+  margin: auto;
 }
 
 .how-item {

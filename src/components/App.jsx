@@ -8,6 +8,7 @@ import UserProfileControl from './UserProfileControl';
 import LogInControl from './LogInControl';
 import LogInForm from './LogInForm';
 import RegisterForm from './RegisterForm';
+import Schedule from './Schedule';
 import { Router, Route, hashHistory } from 'react-router';
 import '../stylesheets/ui.scss';
 import '../stylesheets/index.scss';
@@ -29,6 +30,7 @@ function App() {
           <Route path='/LogIn' component={LogInControl} />
           <Route path='/LogInForm' component={LogInControl} />
           <Route path='/LogInAgain' component={LogInControl} />
+          <Route path='/Schedule' component={Schedule} />
           <Route component={Error404} />
         </Router>
       </div>

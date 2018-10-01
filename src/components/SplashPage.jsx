@@ -12,9 +12,7 @@ function SplashPage(){
       <div className="main-container">
         <Banner bannerText='Activate your 8 to 5' />
         <Menu />
-        <div className="splash-content-container">
-          <TestimonialList />
-        </div>
+        <TestimonialList />
       </div>
     </div>
   );

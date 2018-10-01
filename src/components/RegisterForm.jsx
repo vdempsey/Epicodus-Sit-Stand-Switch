@@ -71,7 +71,7 @@ function RegisterForm(props){
           </div>
           <div>
             <div>
-              <p className='user-name'>Greetings <span className="name">Sit-Stand Worrier!</span></p>
+              <p className='user-name'>Greetings <span className="name">Sit-Stand Warrior!</span></p>
             </div>
           </div>
         </div>

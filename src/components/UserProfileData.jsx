@@ -6,6 +6,13 @@ import frameBlue from '../assets/images/frameBlue.png';
 import newProfile from '../assets/images/newProfile.png';
 import user1 from '../assets/images/user1.png';
 import MenuUser from './MenuUser';
+import one from '../assets/images/one.png';
+import two from '../assets/images/two.png';
+import three from '../assets/images/three.png';
+import schedule from '../assets/images/schedule-example.png';
+import sitStandsm from '../assets/images/sitStandsm2.gif';
+import friends2 from '../assets/images/friends2.gif';
+import timer from '../assets/images/timer.gif';
 import { Link } from 'react-router';
 
 function UserProfileData(props) {
@@ -46,11 +53,33 @@ function UserProfileData(props) {
           </div>
           <div className="profile-content-container">
             <div>&quot;{props.motto}&quot;</div>
-            <div>&#8208; {props.username}</div>
+            <div className="user-signature">&#8208; {props.username}</div>
           </div>
         </div>
       </div>
       <MenuUser />
+        <div className="how-container">
+          <div className="content-how">
+
+            <div className="how-item">
+                <h3>Sitting or Standing, <br />Don't forget to switch in:</h3>
+                <img src={timer} />
+            </div>
+
+            <div className="how-item">
+              <div className="show">
+                <img src={schedule} className="schedule-img"/>
+              </div>
+            </div>
+
+            <div className="how-item">
+                <h3>My Tribe of <br />23 Sit-Stand Warriors!</h3>
+                <img src={friends2} className="schedule-img"/>
+            </div>
+
+
+          </div>
+        </div>
     </div>
   );
 }
