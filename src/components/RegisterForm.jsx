@@ -1,16 +1,9 @@
 import React from 'react';
 import plus from '../assets/images/plus.png';
-import user1 from '../assets/images/user1.png';
-import existingUser from '../assets/images/existingUser.jpg';
 import PropTypes from 'prop-types';
-import Header from './Header';
-import Menu from './Menu';
-import BannerTwo from './BannerTwo';
 import logoType from '../assets/images/logotype.png';
-import ReactUIDropdown from "react-ui-dropdown";
 import { Link } from 'react-router';
 import { v4 } from 'uuid';
-import { withRouter } from 'react-router'
 
 function RegisterForm(props){
   const registerFormStyle = {

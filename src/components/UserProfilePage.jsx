@@ -1,6 +1,4 @@
 import React from 'react';
-import Header from './Header';
-import BannerTwo from './BannerTwo';
 import UserProfileData from './UserProfileData';
 
 function UserProfilePage(props) {

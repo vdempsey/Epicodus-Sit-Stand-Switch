@@ -1,8 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Header from './Header';
-import Menu from './Menu';
-import BannerTwo from './BannerTwo';
 import logoType from '../assets/images/logotype.png';
 import smile from '../assets/images/smile.gif';
 import { Link } from 'react-router';
@@ -35,7 +32,7 @@ import { v4 } from 'uuid';
    const smileStyle = {
      width: '80px',
      marginBottom: '10px'
-   }
+   };
   let _username = null;
   let _password = null;
 

@@ -6,7 +6,6 @@ import Contact from './Contact';
 import Error404 from './Error404';
 import UserProfileControl from './UserProfileControl';
 import LogInControl from './LogInControl';
-import LogInForm from './LogInForm';
 import RegisterForm from './RegisterForm';
 import Schedule from './Schedule';
 import { Router, Route, hashHistory } from 'react-router';

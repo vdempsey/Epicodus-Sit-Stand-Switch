@@ -1,16 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import logoType from '../assets/images/logotype.png';
-import existingUser from '../assets/images/existingUser.jpg';
 import frameBlue from '../assets/images/frameBlue.png';
-import newProfile from '../assets/images/newProfile.png';
-import user1 from '../assets/images/user1.png';
 import MenuUser from './MenuUser';
-import one from '../assets/images/one.png';
-import two from '../assets/images/two.png';
-import three from '../assets/images/three.png';
 import schedule from '../assets/images/schedule-example.png';
-import sitStandsm from '../assets/images/sitStandsm2.gif';
 import friends2 from '../assets/images/friends2.gif';
 import timer from '../assets/images/timer.gif';
 import { Link } from 'react-router';

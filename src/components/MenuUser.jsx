@@ -1,7 +1,4 @@
 import React from 'react';
-import How from './How';
-import Why from './Why';
-import { Link } from 'react-router';
 import MenuLink from './MenuLink';
 
 function Menu(){

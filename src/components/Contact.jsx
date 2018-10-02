@@ -2,7 +2,6 @@ import React from 'react';
 import BannerTwo from './BannerTwo';
 import Menu from './Menu';
 import Header from './Header';
-import { Link } from 'react-router';
 
 
 function Contact(){

@@ -8,7 +8,6 @@ import three from '../assets/images/three.png';
 import schedule from '../assets/images/schedule-example.png';
 import friends from '../assets/images/friends.png';
 import sitStandsm from '../assets/images/sitStandsm2.gif';
-import { Link } from 'react-router';
 
 
 function How(){

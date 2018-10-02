@@ -3,7 +3,6 @@ import BannerTwo from './BannerTwo';
 import Menu from './Menu';
 import Header from './Header';
 import sittingFigure from '../assets/images/sitting-poor-posture.png';
-import { Link } from 'react-router';
 
 
 function Why(){
@@ -16,7 +15,7 @@ function Why(){
         <div className="why-content">
           <img src={sittingFigure} />
           <div>
-            <h2>So You Got Yorself a Sit-Stand Desk...<br/>Don't forget to use it!</h2>
+            <h2>So You Got Yourself a Sit-Stand Desk...<br/>Don't forget to use it!</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
