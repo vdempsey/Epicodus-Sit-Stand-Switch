@@ -14,9 +14,15 @@ h1, label {
   margin: 0
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, li {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 p {
@@ -509,4 +515,52 @@ button {
 
 .schedule-img {
   width: 220px;
+}
+
+.main-blog-container {
+  padding-top: 100px;
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+
+}
+
+.blog-preview-container {
+
+  display: flex;
+  @media screen and (max-width: 800px) {
+    width: 70%;
+      flex-wrap: wrap;
+    }
+  // border-right: 4px solid #f2f2f2;
+  border-bottom: 2px solid #f2f2f2;
+  // flex-direction: column;
+  padding: 20px 0;
+  .copy {
+    display: block;
+    width: 50%;
+    padding: 20px;
+    height: auto;
+    overflow: hidden;
+    // white-space: nowrap;
+  }
+}
+
+.blogs-container {
+  // display: flex;
+    width: 81%;
+    // background-color: yellow;
+}
+
+.sideBar {
+  width: 100%;
+  background-color: #f2f2f2;
+  padding-left: 50px;
+  padding-top: 150px;
+  height: 100vh;
+  position: fixed;
+  margin-left: 75%;
+  // display: flex;
+  top: 60px;
+  left: 0;
 }

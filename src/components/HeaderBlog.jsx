@@ -1,16 +1,15 @@
 import React from 'react';
+import logoType from '../assets/images/logotype.png';
 import { Link } from 'react-router';
 
 
-function Header(){
+function HeaderBlog(){
 
   return (
     <div className="header-container">
       <div className="content-container">
+        <Link to="/"><img className="logoType-sm" src={logoType} /></Link>
         <div className="top-nav-menu">
-          <Link to='/'>HOME</Link>
-          <Link to='/Blog'>BLOG</Link>
-          <Link to='/Contact'>CONTACT</Link>
         </div>
         <div className="top-right-container">
           <div>
@@ -25,4 +24,4 @@ function Header(){
   );
 }
 
-export default Header;
+export default HeaderBlog;
