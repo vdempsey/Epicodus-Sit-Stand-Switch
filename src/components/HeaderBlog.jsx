@@ -6,7 +6,7 @@ import { Link } from 'react-router';
 function HeaderBlog(){
 
   return (
-    <div className="header-container">
+    <div className="header-container header-blog">
       <div className="content-container">
         <Link to="/"><img className="logoType-sm" src={logoType} /></Link>
         <div className="top-nav-menu">

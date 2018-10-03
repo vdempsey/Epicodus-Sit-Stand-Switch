@@ -36,7 +36,7 @@ p {
 
 .header-container {
   width: 100%;
-  height: auto;
+  min-height: 80px;
   display: flex;
   position: fixed;
   z-index: 1;
@@ -563,4 +563,11 @@ button {
   // display: flex;
   top: 60px;
   left: 0;
+}
+
+.header-blog {
+  min-height: 80px;
+  @media screen and (max-width: 800px) {
+      justify-content: center;
+    }
 }
