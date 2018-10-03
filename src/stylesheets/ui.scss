@@ -30,7 +30,7 @@ p {
 
 .header-container {
   width: 100%;
-  height: 70px;
+  height: auto;
   display: flex;
   position: fixed;
   z-index: 1;
@@ -47,23 +47,40 @@ p {
       color: #fff;
       background-color: #0090AA;
     }
+  };
+  @media screen and (max-width: 500px) {
+    height: auto;
   }
 }
 
 .top-nav-menu {
-  padding-top:15px;
+  padding: 20px 0;
   a {
     padding-right: 20px;
+  };
+  @media screen and (max-width: 500px) {
+    display: flex;
+    justify-content: center;
+    a {
+      padding: 0 10px;
+    };
   }
 }
 
 .content-container {
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
+  @media screen and (max-width: 1200px) {
+    width: 90%;
+  };
+  @media screen and (max-width: 500px) {
+    justify-content: space-around;
+  }
 }
 
 .content-container-why {
@@ -82,7 +99,11 @@ p {
 .top-right-container {
   display: flex;
   justify-content: space-between;
+  align-self: center;
   align-content: center;
+  @media screen and (max-width: 500px) {
+      padding-bottom: 30px;
+    }
 }
 
 .banner-container {
@@ -92,6 +113,9 @@ p {
   margin: auto;
   padding-top: 80px;
   padding-bottom: 20px;
+  @media screen and (max-width: 500px) {
+    padding-top: 140px;
+  }
 }
 
 .splash-content-container {
@@ -102,23 +126,38 @@ p {
 .menu-container-wrap {
   width: 100%;
   background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-around;
+
 }
 
 .menu-container {
   display: flex;
-  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+  justify-content: space-between;
   height: 40px;
+  @media screen and (max-width: 500px) {
+      height: auto;
+    }
 }
 
 
 .menu-item-container {
   display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 300px;
+  @media screen and (max-width: 500px) {
+      align-self: center;
+      max-width: 100px;
+    }
 }
 
 .menu-link {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
-  width: 300px;
+  width: 100%;
   padding: 7px;
   text-align: center;
   text-decoration: none;
@@ -148,16 +187,26 @@ p {
   padding-top: 20px;
   width: 120px;
   margin-right: 20px;
+  @media screen and (max-width: 500px) {
+    width: 90px;
+  }
+
 }
 
 .logoType {
   width: 300px;
   padding-top: 20px;
+  @media screen and (max-width: 500px) {
+    width: 200px;
+  }
 }
 
 .logoType-sm {
   width: 200px;
   padding-top: 10px;
+  @media screen and (max-width: 500px) {
+    padding-top: 20px;
+  };
 }
 
 .tagline {
@@ -178,6 +227,10 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 500px) {
+    height: 250px;
+    padding-top: 100px;
+  }
 }
 
 .register-form-container, .log-in-form-container {
@@ -235,6 +288,12 @@ button {
   }
 }
 
+.signOutSm {
+  @media screen and (max-width: 500px) {
+    display: block;
+  }
+}
+
 .profile-img-container {
   position: relative;
   height: 205px;
@@ -258,6 +317,8 @@ button {
 .menu-user-container-wrap {
   width: 100%;
   background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
 }
 
 .user-banner {
@@ -267,10 +328,17 @@ button {
   background-color: $dark-grey;
   display: flex;
   justify-content: center;
+  @media screen and (max-width: 600px) {
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 20px;
+  }
+
 }
 
 .user-information {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   font-size: 18px;
   font-family: 'Open-Sans', sans-serif;
@@ -278,6 +346,9 @@ button {
   color: white;
   margin: auto;
   width: 1200px;
+  // @media screen and (max-width: 500px) {
+  //   flex-wrap: wrap;
+  // }
 }
 
 .profile-content-container {
@@ -285,6 +356,16 @@ button {
   padding-left: 20px;
   padding-top: 80px;
   font-size: 28px;
+  @media screen and (max-width: 600px) {
+    padding-top: 0px;
+    text-align: center;
+    padding-left: 0px;
+    width: 100%;
+  }
+  // @media screen and (max-width: 500px) {
+  //   width: 80%;
+  //   display: block;
+  // }
 }
 
 .user-signature {
@@ -299,7 +380,10 @@ button {
   margin: 30px auto;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  @media screen and (max-width: 900px) {
+    flex-wrap: wrap;
+    }
   justify-content: center;
 }
 
@@ -309,7 +393,18 @@ button {
   font-size: 15px;
   line-height: 24px;
   width: 30%;
-  min-width: 300px;
+  padding-bottom: 30px;
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    padding: 30px 50px;
+    &:nth-child(1) {
+      padding-top: 0;
+    }
+    &:nth-child(even) {
+      border-bottom: 2px solid #f2f2f2;
+      border-top: 2px solid #f2f2f2;
+    }
+    }
 }
 
 .testimonial-img {
@@ -321,7 +416,6 @@ button {
 .snapshot {
   display: flex;
   justify-content: center;
-  // margin: 0 auto;
 }
 
 .bio {
@@ -351,27 +445,48 @@ button {
   max-width: 1200px;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   text-align: center;
   padding-top: 30px;
   margin: auto;
+  @media screen and (max-width: 700px) {
+    flex-wrap: wrap;
+    }
 }
 
 .how-item {
   width: 300px;
+  padding-bottom: 20px;
+  @media screen and (max-width: 700px) {
+    &:nth-child(even) {
+      border-bottom: 2px solid #f2f2f2;
+      border-top: 2px solid #f2f2f2;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      width: 100%;
+    }
+    }
 }
 
 
 .show:hover .hide {
   display: block;
+  @media screen and (max-width: 600px) {
+      display: none;
+    }
 }
 
 .show:hover .number {
   display: none;
+  @media screen and (max-width: 600px) {
+      display: block;
+    }
 }
 
 .show:hover h3 {
   display: none;
+  @media screen and (max-width: 600px) {
+      display: block;
+    }
 }
 
 .hide {
@@ -384,7 +499,12 @@ button {
   margin: auto;
   text-align: center;
   margin-top: 30px;
-
+  @media screen and (max-width: 900px) {
+      width: 100px;
+    }
+  // @media screen and (max-width: 500px) {
+  //     width: 100px;
+  //   }
 }
 
 .schedule-img {
