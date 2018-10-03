@@ -39,7 +39,7 @@ class LogInControl extends React.Component {
       currentlyVisibleContent = <LogInForm onUserLogIn={this.handleLogInFormSubmission}/>;
 
     } else if (this.state.userLog.username == 'Mia' && this.state.userLog.password == 'Mia'){
-      currentlyVisibleContent = <UserProfilePage name='Mia' motto='I like to move it move it!' username="MM" url='mikey.jpg' />;
+      currentlyVisibleContent = <UserProfilePage name='Mia' motto='I like to move it move it!' username="MM" url='existingUser.jpg' />;
       this.state.formVisibleOnPage = false;
       }
     else {
