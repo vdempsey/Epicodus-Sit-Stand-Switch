@@ -2,6 +2,7 @@ import React from 'react';
 import Banner from './Banner';
 import Header from './Header';
 import TestimonialList from './TestimonialList';
+import Footer from './Footer';
 import Menu from './Menu';
 
 
@@ -14,6 +15,7 @@ function SplashPage(){
         <Menu />
         <TestimonialList />
       </div>
+      <Footer />
     </div>
   );
 }

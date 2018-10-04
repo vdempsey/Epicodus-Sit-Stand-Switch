@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import logoType from '../assets/images/logotype.png';
 import frameBlue from '../assets/images/frameBlue.png';
 import MenuUser from './MenuUser';
+import Footer from './Footer';
 import schedule from '../assets/images/schedule-example.png';
 import friends2 from '../assets/images/friends2.gif';
 import timer from '../assets/images/timer.gif';
@@ -73,6 +74,7 @@ function UserProfileData(props) {
 
           </div>
         </div>
+        <Footer />
     </div>
   );
 }

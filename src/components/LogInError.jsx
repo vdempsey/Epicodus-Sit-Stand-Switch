@@ -1,4 +1,5 @@
 import React from 'react';
+import FooterWhite from './FooterWhite';
 import logoType from '../assets/images/logotype.png';
 import { Link } from 'react-router';
 
@@ -34,6 +35,7 @@ function LogInError(){
           <h3>Sorry, we didn't find you! <br />Please <Link to='/LogIn' style={linkStyle}>try again</Link> or <Link to='/Register' style={linkStyle}>register here</Link></h3>
         </div>
       </div>
+      <FooterWhite />
     </div>
     );
 }

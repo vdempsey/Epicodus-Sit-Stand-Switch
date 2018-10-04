@@ -2,6 +2,7 @@ import React from 'react';
 import plus from '../assets/images/plus.png';
 import PropTypes from 'prop-types';
 import logoType from '../assets/images/logotype.png';
+import FooterWhite from './FooterWhite';
 import { Link } from 'react-router';
 import { v4 } from 'uuid';
 
@@ -92,6 +93,7 @@ function RegisterForm(props){
         <button type='submit' style={register}>SAVE</button>
       </form>
     </div>
+    <FooterWhite />
   </div>
   );
 }

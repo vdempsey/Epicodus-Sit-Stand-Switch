@@ -2,6 +2,7 @@ import React from 'react';
 import BannerTwo from './BannerTwo';
 import HeaderBlog from './HeaderBlog';
 import BlogList from './BlogList';
+import Footer from './Footer';
 import Menu from './Menu';
 
 function BlogMain(){
@@ -23,8 +24,13 @@ function BlogMain(){
           <div className='archive'>
             <p>Archive</p>
           </div>
+          <h3>Enter your email <br />
+          to receive <br />our weekly updates:</h3>
+        <input placeholder="enter your email" className="blogEmailInput"></input><br />
+          <button className="blogButton">SIGN UP</button>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

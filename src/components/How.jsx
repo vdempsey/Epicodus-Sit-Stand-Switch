@@ -2,6 +2,7 @@ import React from 'react';
 import BannerTwo from './BannerTwo';
 import Menu from './Menu';
 import Header from './Header';
+import Footer from './Footer';
 import one from '../assets/images/one.png';
 import two from '../assets/images/two.png';
 import three from '../assets/images/three.png';
@@ -51,6 +52,7 @@ function How(){
 
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

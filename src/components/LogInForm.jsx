@@ -1,4 +1,5 @@
 import React from 'react';
+import FooterWhite from './FooterWhite';
 import PropTypes from 'prop-types';
 import logoType from '../assets/images/logotype.png';
 import smile from '../assets/images/smile.gif';
@@ -67,6 +68,7 @@ import { v4 } from 'uuid';
           <button type='submit' style={logInButton}>LOGIN</button>
         </form>
       </div>
+      <FooterWhite />
     </div>
   );
 }

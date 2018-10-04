@@ -2,6 +2,7 @@ import React from 'react';
 import BannerTwo from './BannerTwo';
 import Menu from './Menu';
 import Header from './Header';
+import Footer from './Footer';
 import sittingFigure from '../assets/images/sitting-poor-posture.png';
 
 
@@ -22,6 +23,7 @@ function Why(){
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
