@@ -1,8 +1,16 @@
-![alt-tag-here](/img/logotype.png)
+![logotype](/img/logotype.png)
 
-# Sit-Stand-Switch
+
 _Epicodus capstone project (work in progress)_
 
+### Target Audience:
+Users of Sit-Stand workstations.
+### Goal:
+
+To remind users to switch position throughout the day by creating a sit-stand schedule, build accountability by teaming up with co-workers (one is sitting, one is standing, then switch)
+
+### User Stories:
+![user-stories](/img/userstories.png)
 ### Current state (Oct 2018)
  * User can click and navigate through the menu under the main banner.
  * User can log in with UN: 'Mia', PWD: 'Mia'.
