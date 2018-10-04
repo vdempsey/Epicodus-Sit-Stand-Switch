@@ -1,7 +1,7 @@
 ![logotype](/img/logotype.png)
 
 
-_Epicodus capstone project (work in progress)_
+_Epicodus capstone project (work in progress). Built in React._
 
 ### Target Audience:
 Users of Sit-Stand workstations.
@@ -16,7 +16,12 @@ To remind users to switch position throughout the day by creating a sit-stand sc
  * User can log in with UN: 'Mia', PWD: 'Mia'.
  * User can register/join (For now Enter  "existingUser.jpg" in the "Add Your Profile Photo" field).
  * User can view his/her profile page after logging in or registering (currently each link under the banner links to home page).
- * User can view main Blog page. (Need to address styling in the next stage.)
+ * User can view main Blog page. (Need to address styling in the next stage.).
+
+### Initial Mobile Prototype in InVision (incomplete!):
+_https://invis.io/4VOECZPWSM5_
+
+![preview](/img/invision.png)
 
 
 ##### Clone project directions:
