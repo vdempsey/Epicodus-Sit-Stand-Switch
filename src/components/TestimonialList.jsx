@@ -21,7 +21,7 @@ const masterTestimonialList = [
   },
   {
     image: user2,
-    name: 'User 1 name',
+    name: 'Anthony',
     lenghtOfUse: '1.5 months',
     city: 'San Diego, CA',
     quote: '"Just wanted to thank you again for your wonderful application. I have been using SSS for over a month and find it to be one of the best life-hacks I have ever made. I feel great! No more sore back or bottom, no more neck strain and lots more energy and productivity."'
